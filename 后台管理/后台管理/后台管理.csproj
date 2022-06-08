@@ -1,0 +1,386 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3573D94-032D-4EDF-9561-A130DF212569}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>后台管理</RootNamespace>
+    <AssemblyName>后台管理</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44331</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.7.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="class.aspx" />
+    <Content Include="classEdit.aspx" />
+    <Content Include="coreDatabase.aspx" />
+    <Content Include="coreDatabaseEdit.aspx" />
+    <Content Include="css\admin.css" />
+    <Content Include="css\amazeui.min.css" />
+    <Content Include="css\aspnetpager.css" />
+    <Content Include="css\bootstrap-table\bootstrap-table.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap\bootstrap.css" />
+    <Content Include="css\bootstrap\bootstrap.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\Site.css" />
+    <Content Include="css\zy.all.css" />
+    <Content Include="css\zy.form.css" />
+    <Content Include="css\zy.layout.css" />
+    <Content Include="css\zy.menu.css" />
+    <Content Include="css\zy.pageRecord.css" />
+    <Content Include="css\zy.table.css" />
+    <Content Include="css\zy.tabs.css" />
+    <Content Include="Files\img\微信图片_20201220152235.jpg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="home.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="js\bootstrap-table\bootstrap-table-zh-CN.min.js" />
+    <Content Include="js\bootstrap-table\bootstrap-table.js" />
+    <Content Include="js\bootstrap-table\bootstrap-table.min.js" />
+    <Content Include="js\bootstrap\bootstrap.js" />
+    <Content Include="js\bootstrap\bootstrap.min.js" />
+    <Content Include="js\classScrip.js" />
+    <Content Include="js\coreDatabaseScrip.js" />
+    <Content Include="js\home.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jQuery\jquery-3.2.1.min.js" />
+    <Content Include="js\layer\layer.js" />
+    <Content Include="js\layer\mobile\layer.js" />
+    <Content Include="js\layer\mobile\need\layer.css" />
+    <Content Include="js\layer\theme\default\icon-ext.png" />
+    <Content Include="js\layer\theme\default\icon.png" />
+    <Content Include="js\layer\theme\default\layer.css" />
+    <Content Include="js\layer\theme\default\loading-0.gif" />
+    <Content Include="js\layer\theme\default\loading-1.gif" />
+    <Content Include="js\layer\theme\default\loading-2.gif" />
+    <Content Include="js\perioScrip.js" />
+    <Content Include="js\subjectScrip.js" />
+    <Content Include="js\plugs\jquery.SuperSlide.source.js" />
+    <Content Include="js\plugs\JqueryMD5_DinJonYa.js" />
+    <Content Include="js\plugs\Jqueryplugs.js" />
+    <Content Include="js\plugs\JquerySQLDateToDate_DinJonYa.js" />
+    <Content Include="js\three.min.js" />
+    <Content Include="js\userScrip.js" />
+    <Content Include="js\_layout.js" />
+    <Content Include="login.aspx" />
+    <Content Include="manual.aspx" />
+    <Content Include="message.aspx" />
+    <Content Include="navigate.aspx" />
+    <Content Include="perioDatabase.aspx" />
+    <Content Include="perioDetails.aspx" />
+    <Content Include="periodical.aspx" />
+    <Content Include="perioEdit.aspx" />
+    <Content Include="perioSubject.aspx" />
+    <Content Include="Resources\fonts\fontawesome-webfont.svg" />
+    <Content Include="Resources\images\blueArrow.jpg" />
+    <Content Include="Resources\images\cloud10.png" />
+    <Content Include="Resources\images\loading.gif" />
+    <Content Include="Resources\images\logo.png" />
+    <Content Include="Resources\images\menuarrow.jpg" />
+    <Content Include="Resources\images\menuline.jpg" />
+    <Content Include="subEdit.aspx" />
+    <Content Include="subject.aspx" />
+    <Content Include="subNavigation.aspx" />
+    <Content Include="updatePwd.aspx" />
+    <Content Include="user.aspx" />
+    <Content Include="userEdit.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebService1.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class.aspx.cs">
+      <DependentUpon>class.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="class.aspx.designer.cs">
+      <DependentUpon>class.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classEdit.aspx.cs">
+      <DependentUpon>classEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classEdit.aspx.designer.cs">
+      <DependentUpon>classEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="coreDatabase.aspx.cs">
+      <DependentUpon>coreDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="coreDatabase.aspx.designer.cs">
+      <DependentUpon>coreDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="coreDatabaseEdit.aspx.cs">
+      <DependentUpon>coreDatabaseEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="coreDatabaseEdit.aspx.designer.cs">
+      <DependentUpon>coreDatabaseEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manual.aspx.cs">
+      <DependentUpon>manual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manual.aspx.designer.cs">
+      <DependentUpon>manual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="message.aspx.cs">
+      <DependentUpon>message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="message.aspx.designer.cs">
+      <DependentUpon>message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="navigate.aspx.cs">
+      <DependentUpon>navigate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="navigate.aspx.designer.cs">
+      <DependentUpon>navigate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="perioDatabase.aspx.cs">
+      <DependentUpon>perioDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="perioDatabase.aspx.designer.cs">
+      <DependentUpon>perioDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="perioDetails.aspx.cs">
+      <DependentUpon>perioDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="perioDetails.aspx.designer.cs">
+      <DependentUpon>perioDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="periodical.aspx.cs">
+      <DependentUpon>periodical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="periodical.aspx.designer.cs">
+      <DependentUpon>periodical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="perioEdit.aspx.cs">
+      <DependentUpon>perioEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="perioEdit.aspx.designer.cs">
+      <DependentUpon>perioEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="perioSubject.aspx.cs">
+      <DependentUpon>perioSubject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="perioSubject.aspx.designer.cs">
+      <DependentUpon>perioSubject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App_Code\SqlHelper.cs" />
+    <Compile Include="subEdit.aspx.cs">
+      <DependentUpon>subEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subEdit.aspx.designer.cs">
+      <DependentUpon>subEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subject.aspx.cs">
+      <DependentUpon>subject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subject.aspx.designer.cs">
+      <DependentUpon>subject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subNavigation.aspx.cs">
+      <DependentUpon>subNavigation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subNavigation.aspx.designer.cs">
+      <DependentUpon>subNavigation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updatePwd.aspx.cs">
+      <DependentUpon>updatePwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updatePwd.aspx.designer.cs">
+      <DependentUpon>updatePwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userEdit.aspx.cs">
+      <DependentUpon>userEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userEdit.aspx.designer.cs">
+      <DependentUpon>userEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Files\使用指南2020.12.07.docx" />
+    <None Include="packages.config" />
+    <Content Include="Resources\fonts\fontawesome-webfont.eot" />
+    <Content Include="Resources\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Resources\fonts\fontawesome-webfont.woff" />
+    <Content Include="Resources\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EPPlus\EPPlus\EPPlus.csproj">
+      <Project>{be4a6343-f411-44a3-8d6f-f40747ed7ba5}</Project>
+      <Name>EPPlus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62597</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44331/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

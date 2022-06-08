@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "后台管理", "后台管理\后台管理.csproj", "{A3573D94-032D-4EDF-9561-A130DF212569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPPlus", "..\..\EPPlus\EPPlus\EPPlus.csproj", "{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DevTest|Any CPU = DevTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3573D94-032D-4EDF-9561-A130DF212569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3573D94-032D-4EDF-9561-A130DF212569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3573D94-032D-4EDF-9561-A130DF212569}.DevTest|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3573D94-032D-4EDF-9561-A130DF212569}.DevTest|Any CPU.Build.0 = Debug|Any CPU
+		{A3573D94-032D-4EDF-9561-A130DF212569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3573D94-032D-4EDF-9561-A130DF212569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.DevTest|Any CPU.ActiveCfg = DevTest|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.DevTest|Any CPU.Build.0 = DevTest|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4A6343-F411-44A3-8D6F-F40747ED7BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3DDC744-CDD9-4DA8-89AC-9CAE2F6FCBCB}
+	EndGlobalSection
+EndGlobal
